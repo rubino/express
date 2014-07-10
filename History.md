@@ -3,6 +3,7 @@ unreleased
 
  * accept multiple callbacks to `app.use()`
  * catch errors in multiple `req.param(name, fn)` handlers
+ * fix `res.send(status, num)` to send `num` as json (not error)
  * support non-string `path` in `app.use(path, fn)`
    - supports array of paths
    - supports `RegExp`
